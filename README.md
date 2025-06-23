@@ -1,4 +1,5 @@
 # EYAI
+<small><code>pronounced: /eɪ aɪ/</code></small>
 
 A simple and intuitive wrapper around OpenAI compatible APIs with built-in tool support.
 
