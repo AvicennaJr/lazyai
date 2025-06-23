@@ -144,7 +144,10 @@ class Assistant:
                 function_args = json.loads(tool_call.function.arguments)
 
                 try:
-                    function_response = function_to_call(**function_args)
+                    if function_args is None or function_args == {}:
+                        function_response = function_to_call()
+                    else:
+                        function_response = function_to_call(**function_args)
                 except Exception as e:
                     function_response = f"Error executing {function_name}: {str(e)}"
 
