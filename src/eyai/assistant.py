@@ -165,6 +165,7 @@ class Assistant:
             )
 
             response_content = final_response.choices[0].message.content
+            self.conversation.append({"role": "assistant", "content": response_content})
         else:
             response_content = response.choices[0].message.content
             self.conversation.append({"role": "assistant", "content": response_content})
@@ -173,7 +174,7 @@ class Assistant:
 
     def get_conversation_history(self) -> List[Dict[str, Any]]:
         """Get the current conversation history"""
-        return self.conversation.copy()
+        return self.conversation
 
     def clear_conversation(self):
         """Clear conversation history (keeps system prompt)"""
@@ -187,5 +188,5 @@ class Assistant:
 
     def load_conversation(self, filename: str):
         """Load conversation from a JSON file"""
-        with open(filename, 'r') as f:
+        with open(filename) as f:
             self.conversation = json.load(f)
