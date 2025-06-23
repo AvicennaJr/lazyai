@@ -33,10 +33,10 @@ classifiers = [
 keywords = ["ai", "openai", "chatgpt", "llm", "assistant", "tools", "function-calling", "groq", "deepseek"]
 
 [project.urls]
-Homepage = "https://github.com/AvicennaJr/lazyai"
-Repository = "https://github.com/AvicennaJr/lazyai"
-Documentation = "https://github.com/AvicennaJr/lazyai#readme"
-"Bug Tracker" = "https://github.com/AvicennaJr/lazyai/issues"
+Homepage = "https://github.com/AvicennaJr/eyai"
+Repository = "https://github.com/AvicennaJr/eyai"
+Documentation = "https://github.com/AvicennaJr/eyai#readme"
+"Bug Tracker" = "https://github.com/AvicennaJr/eyai/issues"
 
 [project.optional-dependencies]
 dev = [
@@ -50,7 +50,7 @@ dev = [
 source = "vcs"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/lazyai"]
+packages = ["src/eyai"]
 
 [tool.hatch.build.targets.sdist]
 include = [

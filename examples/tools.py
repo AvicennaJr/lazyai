@@ -1,4 +1,4 @@
-from lazyai import Assistant
+from eyai import Assistant
 
 def main():
     api_key = "your-api-key"

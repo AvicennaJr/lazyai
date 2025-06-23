@@ -1,4 +1,4 @@
-# Lazy AI
+# EYAI
 
 A simple and intuitive wrapper around OpenAI compatible APIs with built-in tool support.
 
@@ -14,13 +14,13 @@ A simple and intuitive wrapper around OpenAI compatible APIs with built-in tool 
 ## Installation
 
 ```bash
-pip install lazy-ai
+pip install eyai
 ```
 
 ## Quick Start
 
 ```python
-from lazyai import Assistant
+from eyai import Assistant
 
 assistant = Assistant(api_key="your-api-key-here")
 
@@ -44,7 +44,7 @@ print(response)  # AI will call get_weather("New York") and respond
 ### Using with Groq
 
 ```python
-from lazyai import Assistant
+from eyai import Assistant
 
 assistant = Assistant(
     api_key="your-groq-api-key",

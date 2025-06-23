@@ -1,4 +1,4 @@
-from lazyai import Assistant
+from eyai import Assistant
 
 api_key = "your-api-key"
 base_url = "https://api.groq.com/openai/v1"
