@@ -1,0 +1,94 @@
+[build-system]
+requires = ["hatchling>=1.21.0", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lazyai"
+dynamic = ["version"]
+description = "A simple and intuitive wrapper around OpenAI Compatible APIs with tool support"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Fuad Habib", email = "info@fuadhabib.xyz" },
+]
+dependencies = [
+    "openai>=1.0.0",
+    "typing-extensions>=4.0.0",
+]
+requires-python = ">= 3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+keywords = ["ai", "openai", "chatgpt", "llm", "assistant", "tools", "function-calling", "groq", "deepseek"]
+
+[project.urls]
+Homepage = "https://github.com/AvicennaJr/lazyai"
+Repository = "https://github.com/AvicennaJr/lazyai"
+Documentation = "https://github.com/AvicennaJr/lazyai#readme"
+"Bug Tracker" = "https://github.com/AvicennaJr/lazyai/issues"
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "types-requests",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lazyai"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/examples",
+    "/README.md",
+    "/LICENSE",
+    "/pyproject.toml",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "B",
+    "C4",
+    "UP",
+]
+ignore = [
+    "E501",
+    "B008",
+]
+
+[tool.mypy]
+python_version = "3.8"
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
