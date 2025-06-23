@@ -1,4 +1,4 @@
-# LazyAI
+# Lazy AI
 
 A simple and intuitive wrapper around OpenAI compatible APIs with built-in tool support.
 
@@ -14,7 +14,7 @@ A simple and intuitive wrapper around OpenAI compatible APIs with built-in tool 
 ## Installation
 
 ```bash
-pip install lazyai
+pip install lazy-ai
 ```
 
 ## Quick Start
