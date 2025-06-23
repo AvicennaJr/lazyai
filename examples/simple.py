@@ -6,5 +6,5 @@ model = "llama-3.3-70b-versatile"
 
 assistant = Assistant(api_key=api_key, base_url=base_url, model=model)
 
-response = assistant.chat("Can you tell me what tools you have available?")
+response = assistant.chat("Hi, how are you?")
 print(f"Assistant: {response}")
