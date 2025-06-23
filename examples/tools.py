@@ -16,13 +16,13 @@ def main():
     def square(number: float) -> float:
         return number ** 2
 
+    response = assistant.chat("Can you tell me what tools you have available?")
+    print(f"Assistant: {response}")
+
     response = assistant.chat("Hello! What time is it?")
     print(f"Assistant: {response}")
 
     response = assistant.chat("What's the square of 7?")
-    print(f"Assistant: {response}")
-
-    response = assistant.chat("Can you tell me what tools you have available?")
     print(f"Assistant: {response}")
 
 if __name__ == "__main__":
