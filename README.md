@@ -23,7 +23,11 @@ pip install eyai
 ```python
 from eyai import Assistant
 
-assistant = Assistant(api_key="your-api-key-here")
+assistant = Assistant(
+    api_key="your-api-key-here",
+    base_url="https://api.groq.com/openai/v1",
+    model="llama-3.3-70b-versatile"
+)
 
 # Simple chat
 response = assistant.chat("Hello! What's the weather like?")
