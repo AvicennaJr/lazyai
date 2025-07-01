@@ -1,6 +1,5 @@
-# EYAI
+# EYAI [![PyPI Downloads](https://img.shields.io/pypi/dm/eyai.svg)](https://pypi.org/project/eyai/)
 <small><code>pronounced: /eɪ aɪ/</code></small>
-[![PyPI Downloads](https://img.shields.io/pypi/dm/eyai.svg)](https://pypi.org/project/eyai/)
 
 A simple and intuitive wrapper around OpenAI compatible APIs with built-in tool support.
 
